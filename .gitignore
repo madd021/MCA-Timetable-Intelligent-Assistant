@@ -1,0 +1,72 @@
+# Environment and secrets
+.env
+*.env
+.env.local
+.env.production
+
+# API keys and tokens
+*token*
+*secret*
+*credential*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Databricks
+.databricks/
+*.databricks
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Temporary files
+tmp/
+temp/
+*.tmp

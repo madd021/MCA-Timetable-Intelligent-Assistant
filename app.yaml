@@ -1,0 +1,19 @@
+# Databricks Apps configuration
+# Deploy with: databricks apps deploy --app-name mca-timetable-assistant
+
+# The command to start the app
+command: ["streamlit", "run", "app.py", "--server.port", "8000", "--server.address", "0.0.0.0"]
+
+# Environment variables (set via Databricks Apps UI or CLI)
+# DATABRICKS_HOST - Your Databricks workspace URL
+# DATABRICKS_TOKEN - Personal access token or OAuth token
+# DATABRICKS_WAREHOUSE_ID - SQL warehouse ID for timetable queries
+# LLM_ENDPOINT - LLM serving endpoint name (default: databricks-gpt-oss-120b)
+# TIMETABLE_CATALOG - Catalog name (default: workspace)
+# TIMETABLE_SCHEMA - Schema name (default: default)
+# TIMETABLE_TABLE - Table name (default: mca_timetable)
+
+# Resource configuration
+compute:
+  cpu: 2
+  memory: 4Gi
